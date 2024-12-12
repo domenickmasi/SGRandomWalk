@@ -1,3 +1,4 @@
+package simplegraphics;
 //HIDE
 public class Color
 {

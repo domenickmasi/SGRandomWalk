@@ -1,3 +1,4 @@
+package simplegraphics;
 //HIDE
 //OUT canvas.png
 import java.awt.image.BufferedImage;

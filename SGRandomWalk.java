@@ -1,23 +1,22 @@
 
 import java.util.Random;
-import simplegraphics.SimpleGraphics;
-import simplegraphics.shapes.*;
+import simplegraphics.*;
 
 public class SGRandomWalk 
 {
     public static void main(String[] args) 
     {
-        SimpleGraphics sg = new SimpleGraphics("Random Walk", 300, 300);
         Rectangle field = new Rectangle(0, 0, 300, 300);
-        field.setColor(200, 200, 200);
+        field.setColor(Color.BLACK);
         field.fill();
 
         Ellipse boundaryCircle = new Ellipse(50, 50, 200, 200);
-        boundaryCircle.setColor(0, 0, 0);
+        boundaryCircle.setColor(Color.BLUE);
         boundaryCircle.draw();
 
-        Ellipse walker = new Ellipse(145, 145, 10, 10);
-        walker.setColor(0, 0, 255);
+
+        Ellipse walker = new Ellipse(150, 150, 10, 10);
+        walker.setColor(Color.RED);
         walker.fill();
 
         Random random = new Random();
